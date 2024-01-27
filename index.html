@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibe</title>
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <link rel="stylesheet" href="index2.html" />
+    <link rel="stylesheet" href="twoassets/css/style2.css" />
+  </head>
+  <body>
+    <section id="search">
+      <img src="icone/logo-verde.png" alt="Logo vibe" class="logo">
+      <div>
+        <button class="btn1" onclick="openModal()">CHECK IN</button>
+        <button class="btn2" onclick="openModal('logInModal')">LOG IN</button>
+      </div>
+    </section>
+
+    <!-- Modales -->
+    <div id="checkInModal" class="modal1">
+      <div class="modal1-content">
+        <form id="checkInForm">
+          <h1>CHECK IN</h1>
+          <form id="checkIn-form">
+            <label for="email">Email:</label><br />
+            <input type="email" id="checkInEmail" name="email" required /><br />
+            <button type="submit">CHECK IN</button>
+          </form>
+        </form>
+      </div>
+    </div>
+    <div id="logInModal" class="modal2">
+      <div class="modal2-content">
+        <form id="logInForm">
+          <h1>LOG IN</h1>
+          <form id="logIn-form">
+            <label for="email">Email:</label><br />
+            <input type="email" id="logInEmail" name="email" required /><br />
+            <label for="password">Password:</label><br />
+            <input type="password" id="logInPassword" name="password" required /><br />
+            <button type="submit">LOG IN</button>
+          </form>
+        </form>
+      </div>
+    </div>
+  
+    <div id="principal" class="principal1"></div>
+      <img src="icone/ilustracion1.svg" alt="ilustración1" class="icon" />
+    
+    
+    <script src="assets/JS/scrip.js"></script>
+    <json src="assets/json/node.json"> </json>
+    <script src="twoassets/js/script2.js"></script>
+    <json src="twoassets/json/data.json"> </json>
+  </body>
+</html>

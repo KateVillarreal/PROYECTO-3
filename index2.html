@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe</title>
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="twoassets/css/style2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="Bloque" class="bloque1"></div>
+    <div id="Bloques2" class="bloque2"></div>
+    <p2></p2>
+</header>
+
+<main>
+  <section id="search">
+    <img src="icone/logo-verde.png" alt="Logo vibe" class="logo">
+    <div>
+      <input type="text" id="search-input" placeholder="Buscar artista o canción">
+      <button id="search-button">Buscar</button>
+    </div>
+    <div class="user">
+      <span>Perfil</span>
+      <img src="icone/usuario.png" alt="Avatar">
+    </div>
+  </section>
+
+  <button id="botonLimpiar">Limpiar</button>
+      <button id="botonMostrarTodos">Mostrar todos</button>
+      <button id="mostrarEstadisticas">Mostrar Estadísticas</button>
+
+
+</main>
+
+
+<div class="container">
+  <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+    <img src="icone/icone-luna.png" alt="dark mode" class="icon" />
+  </button>
+</div>  
+
+
+<div id="pictures-container"  class="flex-container">
+  <!--AQUI ADENTRO APARECERAN Y DESAPARECEN LAS CARDS 
+  DE LOS CANTANTES-->
+</div>
+<section id="results">
+  <!-- Aquí se mostrarán los resultados de la búsqueda -->
+</section>
+
+
+
+
+<script src="assets/JS/scrip.js"></script>
+<json src="assets/json/node.json"> </json>
+<script src="twoassets/js/script2.js"></script>
+<json src="twoassets/json/data.json"> </json>
+</body>
+</html>

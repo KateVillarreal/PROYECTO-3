@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 1s, color 1s;
+    font-family: Arial, sans-serif;
+  }
+
+.bloque1 {
+    background-color: black;
+    background-position: 0%;
+}
+
+
+header {
+  background-color: #1db954;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+#search {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+#search .logo{
+  width: 100px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+#search .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+#search .user span {
+  font-size: 20px;
+}
+
+#search .user img{
+  width: 100px;
+  object-fit: contain;
+} 
+
+#search-input {
+  padding: 10px;
+  width: 300px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.result-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.result-artist {
+  font-size: 14px;
+  color: #888;
+}
+
+.result-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.result-album {
+  font-size: 14px;
+  color: #888;
+}
+.flex-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
+}
+.flex-container .card {
+  flex: auto;
+  width: 400px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 103px -22px rgba(0,0,0,0.63);
+  -webkit-box-shadow: 0px 0px 103px -22px rgba(0,0,0,0.63);
+  -moz-box-shadow: 0px 0px 103px -22px rgba(0,0,0,0.63);
+}
+.flex-container .card .nombre{
+  font-size: 32px;
+  margin: 0 0 15px;
+}
+.flex-container .card img{
+  height: 280px;
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+}
